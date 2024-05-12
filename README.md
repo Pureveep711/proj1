@@ -42,7 +42,6 @@ option_4() {
 }
 
 
-
 option_5() {
     echo "Do you want to modify the format of date? (y/n) : \c"
     read choice
@@ -54,16 +53,7 @@ option_5() {
 
 
 option_6() {
-    echo "1) Arsenal 11) Liverpool
-2) Tottenham Hotspur 12) Chelsea
-3) Manchester City 13) West Ham United
-4) Leicester City 14) Watford
-5) Crystal Palace 15) Newcastle United
-6) Everton 16) Cardiff City
-7) Burnley 17) Fulham
-8) Southampton 18) Brighton & Hove Albion
-9) AFC Bournemouth 19) Huddersfield Town
-10) Manchester United 20) Wolverhampton Wanderers"
+    echo "1) Arsenal 11) Liverpool 2) Tottenham Hotspur 12) Chelsea 3) Manchester City 13) West Ham United 4) Leicester City 14) Watford 5) Crystal Palace 15) Newcastle United 6) Everton 16) Cardiff City 7) Burnley 17) Fulham 8) Southampton 18) Brighton & Hove Albion 9) AFC Bournemouth 19) Huddersfield Town 10) Manchester United 20) Wolverhampton Wanderers"
     echo "Enter your team number : \c"
     read team_num
     team_name=$(awk -F ',' -v num="$team_num" '$6 == num {print $1}' teams.csv)
