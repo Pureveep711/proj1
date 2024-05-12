@@ -1,4 +1,3 @@
-
 option_1() {
     echo "Do you want to get the Heung-Min Son's data? (y/n) : \c"
     read choice
@@ -54,16 +53,7 @@ option_5() {
 
 
 option_6() {
-    echo "1) Arsenal 11) Liverpool
-2) Tottenham Hotspur 12) Chelsea
-3) Manchester City 13) West Ham United
-4) Leicester City 14) Watford
-5) Crystal Palace 15) Newcastle United
-6) Everton 16) Cardiff City
-7) Burnley 17) Fulham
-8) Southampton 18) Brighton & Hove Albion
-9) AFC Bournemouth 19) Huddersfield Town
-10) Manchester United 20) Wolverhampton Wanderers"
+    echo "1) Arsenal 11) Liverpool 2) Tottenham Hotspur 12) Chelsea 3) Manchester City 13) West Ham United 4) Leicester City 14) Watford 5) Crystal Palace 15) Newcastle United 6) Everton 16) Cardiff City 7) Burnley 17) Fulham 8) Southampton 18) Brighton & Hove Albion 9) AFC Bournemouth 19) Huddersfield Town 10) Manchester United 20) Wolverhampton Wanderers"
     echo "Enter your team number : \c"
     read team_num
     team_name=$(awk -F ',' -v num="$team_num" '$6 == num {print $1}' teams.csv)
@@ -117,4 +107,3 @@ do
         *)
             echo "Invalid option. Please enter a number between 1 and 7."
             ;;
-   
