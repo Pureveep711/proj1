@@ -7,7 +7,6 @@ option_1() {
     fi
 }
 
-
 option_2() {
     echo "What do you want to get the team data of league_position[1~20] : \c"
     read position
